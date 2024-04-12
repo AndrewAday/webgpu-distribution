@@ -41,7 +41,7 @@ else (EMSCRIPTEN)
 				IMPORTED_IMPLIB "${WGPU_RUNTIME_LIB}"
 				INTERFACE_INCLUDE_DIRECTORIES "${WGPU}/include"
 		)
-		target_link_libraries(webgpu INTERFACE d3d12 d3dcompiler dxgi ws2_32 wsock32 bcrypt)
+		target_link_libraries(webgpu INTERFACE d3d12 d3dcompiler dxgi ws2_32 wsock32 bcrypt userenv)
 
 	elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
 
