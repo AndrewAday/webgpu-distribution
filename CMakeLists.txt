@@ -73,7 +73,3 @@ else (EMSCRIPTEN)
 	set(WGPU_RUNTIME_LIB ${WGPU_RUNTIME_LIB} CACHE INTERNAL "Path to the WebGPU library binary")
 
 endif (EMSCRIPTEN)
-
-# Does nothing when statically linked
-function(target_copy_webgpu_binaries Target)
-endfunction()
