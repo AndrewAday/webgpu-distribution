@@ -62,8 +62,8 @@ else (EMSCRIPTEN)
 				IMPORTED_LOCATION "${WGPU_RUNTIME_LIB}"
 				INTERFACE_INCLUDE_DIRECTORIES "${WGPU}/include"
 		)
-		# target_link_libraries(webgpu PRIVATE "-framework Cocoa" "-framework CoreVideo" "-framework IOKit" "-framework QuartzCore")
-		target_link_libraries(webgpu PRIVATE "-framework Metal")
+		# target_link_libraries(webgpu INTERFACE "-framework Cocoa" "-framework CoreVideo" "-framework IOKit" "-framework QuartzCore")
+		target_link_libraries(webgpu INTERFACE "-framework Metal")
 
 	else()
 
